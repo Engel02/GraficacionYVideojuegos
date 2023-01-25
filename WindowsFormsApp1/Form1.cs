@@ -12,9 +12,14 @@ namespace WindowsFormsApp1
 {
     public partial class Form1 : Form
     {
+        Bitmap bmp;
         public Form1()
         {
             InitializeComponent();
+            SetStyle(ControlStyles.OptimizedDoubleBuffer, true);
+
+            bmp = new Bitmap(PCT_CANVAS.Width, PCT_CANVAS.Height);
+            PCT_CANVAS.Image= bmp;
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -25,6 +30,28 @@ namespace WindowsFormsApp1
         private void label1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Bitmap bmp = new Bitmap(textBox1.Text);
+            PCT_CANVAS.Image = bmp;
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            PCT_CANVAS.SizeMode=PictureBoxSizeMode.StretchImage;
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Graphics.FromImage(bmp).DrawLine(Pens.Yellow, 0, 0, 150, 50);
+            PCT_CANVAS.Refresh();
         }
     }
 }
