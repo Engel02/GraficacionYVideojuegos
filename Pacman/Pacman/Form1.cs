@@ -26,7 +26,10 @@ namespace Pacman
         Canvas canvas;
         int count = 0;
         int countLivesLeft = 3;
-        int speedPacman;
+        int speedPacman = 5;
+        byte[,] level = Mapa.map0;
+        byte[,] leve2 = Mapa.map1;
+        byte[,] leve3 = Mapa.map2;
 
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -35,6 +38,20 @@ namespace Pacman
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
+
+        }
+        private void restart(byte[,] currentMap, byte[,] newMap)
+        {
+            for (int x = 0; x < currentMap.GetLength(1); x++)
+            {
+                for (int y = 0; y < currentMap.GetLength(1); y++)
+                {
+                    currentMap[y, x] = newMap[y, x];
+                }
+            }
+            //Resetear SCORE y dibujar de nuevo el mapa
+           
+            DrawMap(currentMap);
 
         }
 
@@ -236,6 +253,8 @@ namespace Pacman
         private void LoadImages()
         {
             List<PictureBox> pictureBoxes = new List<PictureBox>();
+         
+
             foreach (Control control in this.Controls)
             {
                 if (control is PictureBox)
@@ -286,9 +305,9 @@ namespace Pacman
             PCT_CANVAS.Image = bmp;
             canvas = new Canvas(bmp);
 
-            
 
-            DrawMap();
+            
+            //DrawMap();
             LoadImages();
             pictureBox97Cereza.BackColor = Color.FromArgb(35, 35, 35);
 
@@ -328,14 +347,25 @@ namespace Pacman
 
         }
 
+        private void mostrarGanaste()
+        {
+           
+            if (pictureBox1.Bounds.IntersectsWith(pictureBoxActivaWin.Bounds))
+            {
+                labelWon.Visible = true;
+            }
+
+
+
+        }
+
         protected override bool ProcessCmdKey(ref Message msg, Keys keyData)
         {
-            int x = pictureBox1.Location.X;
-            int y = pictureBox1.Location.Y;
-
+          
+            int x = pictureBox1.Location.X / 10;
+            int y = pictureBox1.Location.Y / 10;
             
             
-
             switch (keyData)
             {
 
@@ -343,54 +373,82 @@ namespace Pacman
 
                    
                     
-                    var positionX = pictureBox1.Location.X;
-                    var positionY = pictureBox1.Location.Y;
+                    
 
-                    if (Mapa.map0[--x/10,y/10]!=1)
-                    {
-                        speedPacman = 5;
+                   // if (Mapa.map0[--x, y] == 1)
+                    //{
+                        
                         //pictureBox1.Image.RotateFlip(RotateFlipType.Rotate180FlipY);
                         pictureBox1.Left -= speedPacman;
                         pictureBox1.Image = Resource1.left;
+
+                    if (pacmInterAzul() == true)
+                    {
+                        pictureBox1.Left += speedPacman;
                     }
-                   
-
-                    Console.WriteLine(positionX);
-
-                    
+                    //}
 
                     break;
 
                 case Keys.Right:
-                    pictureBox1.Left += speedPacman;
-                    pictureBox1.Image = Resource1.right;
+
+                   // if (Mapa.map0[++x, y] == 1)
+                    //{
+                        pictureBox1.Left += speedPacman;
+                        pictureBox1.Image = Resource1.right;
+                    //}
+
+                    if (pacmInterAzul() == true)
+                    {
+                        pictureBox1.Left -= speedPacman;
+                    }
 
                     break;
 
                 case Keys.Up:
-                    pictureBox1.Top -= speedPacman;
-                    pictureBox1.Image = Resource1.Up;
+
+                    //if (Mapa.map0[x, ++y] == 1)
+                    //{
+                        pictureBox1.Top -= speedPacman;
+                        pictureBox1.Image = Resource1.Up;
+                    //}
+
+                    if (pacmInterAzul() == true)
+                    {
+                        pictureBox1.Top += speedPacman;
+                    }
+
+
                     break;
 
                 case Keys.Down:
-                    pictureBox1.Top += speedPacman;
-                    pictureBox1.Image = Resource1.down;
+                   // if (Mapa.map0[x, --y] == 1)
+                    //{
+                        pictureBox1.Top += speedPacman;
+                        pictureBox1.Image = Resource1.down;
+                    //}
+
+                    if (pacmInterAzul() == true)
+                    {
+                        pictureBox1.Top -= speedPacman;
+                    }
+
                     break;
             }
            
             return base.ProcessCmdKey(ref msg, keyData);
         }
 
-        private void DrawMap()
+        private void DrawMap(byte[,] map)
         {
             Graphics g = Graphics.FromImage(bmp);
             g.Clear(Color.Black);
-
-            for (int x = 0; x < Mapa.map0.GetLength(0); x++)
+          
+            for (int x = 0; x < map.GetLength(0); x++)
             {
-                for (int y = 0; y < Mapa.map0.GetLength(1); y++)
+                for (int y = 0; y < map.GetLength(1); y++)
                 {
-                    if (Mapa.map0[y, x] == 1)
+                    if (map[y, x] == 1)
                     {
                         g.FillRectangle(new SolidBrush(Color.FromArgb(35, 35, 35)), x * 10, y * 10, 10, 10);
                         //int punto1 = Mapa.map0[x, y] = 1;
@@ -399,7 +457,7 @@ namespace Pacman
                         //moneda.Image = Resource1.coin;
                         pictureBox1.BackColor = Color.FromArgb(55, 55, 55);
                     }
-                    else if (Mapa.map0[y, x] == 0)
+                    else if (map[y, x] == 0)
                     {
                         g.FillRectangle(new SolidBrush(Color.FromArgb(39, 39, 225)), x * 10, y * 10, 10, 10);
                         
@@ -414,7 +472,37 @@ namespace Pacman
                 }
                 
             }
+            PCT_CANVAS.Invalidate();
+
+        }
+
+        private void PCT_CANVAS_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
             
+            
+
+        }
+
+        private void buttonNivel2_Click(object sender, EventArgs e)
+        {
+            pictureBox17.Visible= true;  
+            
+            restart(level, Mapa.map1);
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+           restart(level, Mapa.map2);
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            restart(level, Mapa.map0);
         }
 
         /*
@@ -455,6 +543,29 @@ namespace Pacman
             {
                 label1.Visible = false;
             }
+        }
+
+        private Boolean pacmInterAzul()
+        {
+
+            bool choco = false;
+            foreach (Control x in this.Controls)
+            {
+                if (x is PictureBox)
+                {
+                    if ((string)x.Tag == "pictBoxAzul")
+                    {
+                        x.BackColor = Color.FromArgb(0, 0, 0);
+                        if (pictureBox1.Bounds.IntersectsWith(x.Bounds))
+                        {
+
+                            //pictureBox1.BackColor = Color.FromArgb(35, 35, 35);
+                            choco = true;
+                        }
+                    }
+                }
+            }
+            return choco;
         }
 
         private void pacmanIntersecta()
@@ -532,6 +643,8 @@ namespace Pacman
             activarComerGhost();
             menosVidas();
             eliminarFantasmas();
+            pacmInterAzul();
+            mostrarGanaste();
 
             Point punto = new Point(x, y);
             pictureBox1.Location = punto;
