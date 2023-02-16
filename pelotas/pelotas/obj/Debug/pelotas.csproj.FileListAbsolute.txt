@@ -1,0 +1,11 @@
+C:\Users\HARRYS SYSTEM PC\OneDrive - Fundacion Universidad de las Americas Puebla\Univ\Sexto Semestre\Graficacion y Videojuegos\App W VS\WindowsFormsApp1\pelotas\pelotas\bin\Debug\pelotas.exe.config
+C:\Users\HARRYS SYSTEM PC\OneDrive - Fundacion Universidad de las Americas Puebla\Univ\Sexto Semestre\Graficacion y Videojuegos\App W VS\WindowsFormsApp1\pelotas\pelotas\bin\Debug\pelotas.exe
+C:\Users\HARRYS SYSTEM PC\OneDrive - Fundacion Universidad de las Americas Puebla\Univ\Sexto Semestre\Graficacion y Videojuegos\App W VS\WindowsFormsApp1\pelotas\pelotas\bin\Debug\pelotas.pdb
+C:\Users\HARRYS SYSTEM PC\OneDrive - Fundacion Universidad de las Americas Puebla\Univ\Sexto Semestre\Graficacion y Videojuegos\App W VS\WindowsFormsApp1\pelotas\pelotas\obj\Debug\pelotas.csproj.AssemblyReference.cache
+C:\Users\HARRYS SYSTEM PC\OneDrive - Fundacion Universidad de las Americas Puebla\Univ\Sexto Semestre\Graficacion y Videojuegos\App W VS\WindowsFormsApp1\pelotas\pelotas\obj\Debug\pelotas.csproj.SuggestedBindingRedirects.cache
+C:\Users\HARRYS SYSTEM PC\OneDrive - Fundacion Universidad de las Americas Puebla\Univ\Sexto Semestre\Graficacion y Videojuegos\App W VS\WindowsFormsApp1\pelotas\pelotas\obj\Debug\pelotas.Form1.resources
+C:\Users\HARRYS SYSTEM PC\OneDrive - Fundacion Universidad de las Americas Puebla\Univ\Sexto Semestre\Graficacion y Videojuegos\App W VS\WindowsFormsApp1\pelotas\pelotas\obj\Debug\pelotas.Properties.Resources.resources
+C:\Users\HARRYS SYSTEM PC\OneDrive - Fundacion Universidad de las Americas Puebla\Univ\Sexto Semestre\Graficacion y Videojuegos\App W VS\WindowsFormsApp1\pelotas\pelotas\obj\Debug\pelotas.csproj.GenerateResource.cache
+C:\Users\HARRYS SYSTEM PC\OneDrive - Fundacion Universidad de las Americas Puebla\Univ\Sexto Semestre\Graficacion y Videojuegos\App W VS\WindowsFormsApp1\pelotas\pelotas\obj\Debug\pelotas.csproj.CoreCompileInputs.cache
+C:\Users\HARRYS SYSTEM PC\OneDrive - Fundacion Universidad de las Americas Puebla\Univ\Sexto Semestre\Graficacion y Videojuegos\App W VS\WindowsFormsApp1\pelotas\pelotas\obj\Debug\pelotas.exe
+C:\Users\HARRYS SYSTEM PC\OneDrive - Fundacion Universidad de las Americas Puebla\Univ\Sexto Semestre\Graficacion y Videojuegos\App W VS\WindowsFormsApp1\pelotas\pelotas\obj\Debug\pelotas.pdb
