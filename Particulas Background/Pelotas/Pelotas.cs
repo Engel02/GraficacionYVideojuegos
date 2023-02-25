@@ -28,9 +28,9 @@ namespace Pelotas
         public Pelotas()
         {
             InitializeComponent();
-            layer1 = Resource1.aviones;
+            layer1 = Resource1.Imagen5_png;
 
-            l1_X1 = 0;
+            l1_X1 = -1;
             
         }
 

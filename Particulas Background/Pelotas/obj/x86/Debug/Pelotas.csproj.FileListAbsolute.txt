@@ -31,3 +31,16 @@ C:\Users\HARRYS SYSTEM PC\OneDrive - Fundacion Universidad de las Americas Puebl
 C:\Users\HARRYS SYSTEM PC\OneDrive - Fundacion Universidad de las Americas Puebla\Univ\Sexto Semestre\Graficacion y Videojuegos\Pelotas - Copy\Pelotas\obj\x86\Debug\Pelotas.csproj.CoreCompileInputs.cache
 C:\Users\HARRYS SYSTEM PC\OneDrive - Fundacion Universidad de las Americas Puebla\Univ\Sexto Semestre\Graficacion y Videojuegos\Pelotas - Copy\Pelotas\obj\x86\Debug\Pelotas.exe
 C:\Users\HARRYS SYSTEM PC\OneDrive - Fundacion Universidad de las Americas Puebla\Univ\Sexto Semestre\Graficacion y Videojuegos\Pelotas - Copy\Pelotas\obj\x86\Debug\Pelotas.pdb
+C:\Users\HARRYS SYSTEM PC\OneDrive - Fundacion Universidad de las Americas Puebla\Univ\Sexto Semestre\Graficacion y Videojuegos\Particulas Background\Pelotas\bin\Debug\Pelotas.exe.config
+C:\Users\HARRYS SYSTEM PC\OneDrive - Fundacion Universidad de las Americas Puebla\Univ\Sexto Semestre\Graficacion y Videojuegos\Particulas Background\Pelotas\bin\Debug\Pelotas.exe
+C:\Users\HARRYS SYSTEM PC\OneDrive - Fundacion Universidad de las Americas Puebla\Univ\Sexto Semestre\Graficacion y Videojuegos\Particulas Background\Pelotas\bin\Debug\Pelotas.pdb
+C:\Users\HARRYS SYSTEM PC\OneDrive - Fundacion Universidad de las Americas Puebla\Univ\Sexto Semestre\Graficacion y Videojuegos\Particulas Background\Pelotas\obj\x86\Debug\Pelotas.csproj.AssemblyReference.cache
+C:\Users\HARRYS SYSTEM PC\OneDrive - Fundacion Universidad de las Americas Puebla\Univ\Sexto Semestre\Graficacion y Videojuegos\Particulas Background\Pelotas\obj\x86\Debug\Pelotas.csproj.SuggestedBindingRedirects.cache
+C:\Users\HARRYS SYSTEM PC\OneDrive - Fundacion Universidad de las Americas Puebla\Univ\Sexto Semestre\Graficacion y Videojuegos\Particulas Background\Pelotas\obj\x86\Debug\Pelotas.Balls.resources
+C:\Users\HARRYS SYSTEM PC\OneDrive - Fundacion Universidad de las Americas Puebla\Univ\Sexto Semestre\Graficacion y Videojuegos\Particulas Background\Pelotas\obj\x86\Debug\Pelotas.Pelotas.resources
+C:\Users\HARRYS SYSTEM PC\OneDrive - Fundacion Universidad de las Americas Puebla\Univ\Sexto Semestre\Graficacion y Videojuegos\Particulas Background\Pelotas\obj\x86\Debug\Pelotas.Properties.Resources.resources
+C:\Users\HARRYS SYSTEM PC\OneDrive - Fundacion Universidad de las Americas Puebla\Univ\Sexto Semestre\Graficacion y Videojuegos\Particulas Background\Pelotas\obj\x86\Debug\Pelotas.Resource1.resources
+C:\Users\HARRYS SYSTEM PC\OneDrive - Fundacion Universidad de las Americas Puebla\Univ\Sexto Semestre\Graficacion y Videojuegos\Particulas Background\Pelotas\obj\x86\Debug\Pelotas.csproj.GenerateResource.cache
+C:\Users\HARRYS SYSTEM PC\OneDrive - Fundacion Universidad de las Americas Puebla\Univ\Sexto Semestre\Graficacion y Videojuegos\Particulas Background\Pelotas\obj\x86\Debug\Pelotas.csproj.CoreCompileInputs.cache
+C:\Users\HARRYS SYSTEM PC\OneDrive - Fundacion Universidad de las Americas Puebla\Univ\Sexto Semestre\Graficacion y Videojuegos\Particulas Background\Pelotas\obj\x86\Debug\Pelotas.exe
+C:\Users\HARRYS SYSTEM PC\OneDrive - Fundacion Universidad de las Americas Puebla\Univ\Sexto Semestre\Graficacion y Videojuegos\Particulas Background\Pelotas\obj\x86\Debug\Pelotas.pdb
