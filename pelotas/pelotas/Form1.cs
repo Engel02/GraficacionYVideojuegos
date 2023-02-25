@@ -52,7 +52,7 @@ namespace pelotas
             var random1 = new Random();
 
             // Agregar una pelota cuando se hace clic en la pantalla
-            Pelotas newBall = new Pelotas(e.X, e.Y, random1.Next(50), random2.Next(-10, 10), random3.Next(-30, 10));
+            Pelotas newBall = new Pelotas(100, 100, random1.Next(50), random2.Next(-10, 10), random3.Next(-30, 10));
             Array.Resize(ref balls, balls.Length + 1);
             balls[balls.Length - 1] = newBall;
         }
